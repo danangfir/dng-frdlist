@@ -1,0 +1,64 @@
+
+img.rainbow {
+  position: absolute;
+  height: 256px;
+  width: auto;
+  transform: rotate(135deg);
+  left: -100px;
+  top: -100px;
+}
+img.sticker_12 {
+  z-index:9;
+  position: absolute;
+  width: 128px;
+  left:-20px;
+  bottom: 1em;
+  animation: leftRight ease-in-out 0.975s;
+  animation-delay: 0.2s;
+  animation-iteration-count: infinite;
+}
+img.sticker_15 {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  width: 128px;
+  height: auto;
+  right: 0px;
+  top: 0px;
+  border-radius: 100%;
+}
+img.sticker_16 {
+  width: 128px;
+  height: auto;
+}
+div.bottom-fixed {
+  z-index:10;
+  position: fixed;
+  bottom: 0;
+  overflow: hidden;
+  width: auto;
+  height: 128px;
+  animation: marqueeLeft ease-in 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes marqueeLeft {
+  from {
+    transform: translateX(125vw);
+  }
+  to {
+    transform: translateX(-30vw);
+  }
+}
+
+@keyframes leftRight {
+  0% {
+    left: 0;
+  }
+  50% {
+   left: 200px;
+  }
+  100% {
+    left: 0;
+  }
+}

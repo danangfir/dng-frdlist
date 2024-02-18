@@ -1,0 +1,109 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+@import "overlay.css";
+@import "star.css";
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+html {
+  font-family: "Raleway", sans-serif !important;
+  font-optical-sizing: auto;
+  transition: 0.5s;
+  scroll-behavior: smooth;
+}
+
+
+div.z-index-1 {
+  z-index: 1;
+}
+div.z-index-2 {
+  z-index: 2;
+}
+div.z-index-3 {
+  z-index: 3;
+}
+div.textContent {
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+}
+ul{
+  display: flex;
+  justify-content: flex-start;
+}
+li.listEl {
+  list-style: none;
+  width: fit-content;
+}
+div.listDiv {
+  float: left;
+}
+
+
+div.kontainer {
+  height: 100%;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+        justify-content: center;
+        -webkit-align-items: center;
+}
+div.kontainer.animated {
+  background: #d8e;
+}
+div.konten {
+  transition: all 0.3s;
+  overflow: scroll;
+  border-radius: 20px;
+  word-wrap: break-word;
+}
+div.konten.animated {
+  animation: opening 0.3s linear;
+  animation-fill-mode: forwards;
+  height: 0%;
+  background: #fff;
+  width: 90%;
+  max-height: 62%;
+  border: 2px #000 solid;
+  box-shadow: 5px 5px #000;
+}
+label.inputImages {
+  z-index: 2;
+}
+input.inputImages {
+  display:none;
+}
+div#inputDiv {
+  padding-top: 1.75em;
+}
+img#outputImages {
+  object-fit: cover;
+  max-width: 100px;
+  max-height: 100px;
+}
+div#imageDiv {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  text-align: center;
+  font-size: 12px;
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+}
+
+
+
+
+
+
+
+@keyframes opening {
+  from {
+    width: 0%;
+    height: 0%;
+  }
+  to {
+    width: 90%;
+    height:fit-content;
+  }
+}
